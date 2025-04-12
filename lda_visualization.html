@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el1207222857384666564337720410" style="background-color:white;"></div>
+<script type="text/javascript">
+
+var ldavis_el1207222857384666564337720410_data = {"mdsDat": {"x": [0.051838912517333635, 0.06857125176251638, -0.12041016427985003], "y": [0.08247726704782178, -0.07653779417846922, -0.005939472869352553], "topics": [1, 2, 3], "cluster": [1, 1, 1], "Freq": [38.67744170164397, 33.64781133648579, 27.674746961870238]}, "tinfo": {"Term": ["patient", "outcome", "pancreatic_cancer", "then", "medication", "far", "good", "well", "take", "lorazepam", "so", "still", "seroquel", "move", "need", "help", "lorazepam", "take", "outcome", "pancreatic_cancer", "survival", "patient", "lorazepam", NaN, NaN, NaN], "Freq": [14.0, 7.0, 7.0, 3.663771352025144, 3.5671051773399864, 3.4703265283392764, 6.794696166330066, 6.448070904692095, 23.902385855125743, 37.121380752198185, 10.789762566264143, 5.336743307756081, 4.402372881539207, 3.8367858065608105, 11.57058895011359, 8.520363968657618, 28.400479831041316, 16.076309807422653, 6.998428687325562, 6.826318161816333, 5.848274701681153, 11.110007667332841, 32.073618755306626, NaN, NaN, NaN], "Total": [14.0, 7.0, 7.0, 4.120108374839494, 4.022464398072731, 3.924791360176429, 7.805441261458882, 7.865993850914451, 45.52364655213897, 97.59547933854613, 19.54804712121333, 5.829237249114643, 4.87772165442244, 4.311781147125035, 16.61731495395328, 12.961021349323147, 97.59547933854613, 45.52364655213897, 7.487301780221462, 7.319280532693337, 6.338512967145758, 14.40179849313737, 97.59547933854613, NaN, NaN, NaN], "Category": ["Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic3", "Topic3", "Topic3", "Topic3", "Topic3", NaN, NaN, NaN], "logprob": [3.0, 2.0, 1.0, -5.3374, -5.3641, -5.3916, -4.7197, -4.7721, -3.4619, -3.0217, -4.2573, -4.822, -5.0144, -5.1519, -4.0481, -4.3541, -3.1502, -3.7192, -4.3555, -4.3804, -4.535, -3.8933, -2.8331, NaN, NaN, NaN], "loglift": [3.0, 2.0, 1.0, 0.8325, 0.8298, 0.8268, 0.8112, 0.7511, 0.3057, -0.0167, 0.3556, 1.001, 0.9867, 0.9725, 0.7272, 0.6697, -0.1452, 0.0483, 1.2171, 1.2149, 1.2042, 1.0251, 0.1719, NaN, NaN, NaN], "Terms": ["nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "nan", "Top 3 Terms: lorazepam, take, need", "Top 3 Terms: lorazepam, patient, outcome", "Top 3 Terms: lorazepam, take, so"]}, "token.table": {"Topic": [1, 1, 2, 1, 2, 3, 1, 2, 3, 1, 2, 1, 2, 3, 3, 3, 1, 2, 3, 2, 1, 2, 3, 2, 3, 1, 2, 3, 1, 1, 2], "Freq": [0.764371841632148, 0.8968102847130592, 0.12811575495900845, 0.07715441345617582, 0.6943897211055825, 0.23146324036852747, 0.37911592064271515, 0.28689853454043307, 0.3278840394747807, 0.9944152649098662, 0.9276908691590433, 0.2407127752638759, 0.7221383257916277, 0.06017819381596898, 0.9349162362456495, 0.956378153389914, 0.13887154447779726, 0.06943577223889863, 0.7637934946278849, 0.8200549935795036, 0.5627160570972288, 0.306936031143943, 0.1534680155719715, 0.8577451536664442, 0.9465942613195929, 0.5271985400491239, 0.35146569336608263, 0.13179963501228098, 0.9708482486594365, 0.7627771027690897, 0.1271295171281816], "Term": ["far", "good", "good", "help", "help", "help", "lorazepam", "lorazepam", "lorazepam", "medication", "move", "need", "need", "need", "outcome", "pancreatic_cancer", "patient", "patient", "patient", "seroquel", "so", "so", "so", "still", "survival", "take", "take", "take", "then", "well", "well"]}, "R": 3, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [3, 1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el1207222857384666564337720410", ldavis_el1207222857384666564337720410_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://d3js.org/d3.v5"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el1207222857384666564337720410", ldavis_el1207222857384666564337720410_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://d3js.org/d3.v5.js", function(){
+         LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el1207222857384666564337720410", ldavis_el1207222857384666564337720410_data);
+            })
+         });
+}
+</script>
